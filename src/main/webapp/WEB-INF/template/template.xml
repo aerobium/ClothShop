@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="base">
+        <put-attribute name="footer" value="/WEB-INF/template/footer.jsp"/>
+        <put-attribute name="srcLinks" value="/WEB-INF/template/srcLinks.jsp"/>
+        <put-attribute name="header" value="/WEB-INF/template/header.jsp"/>
+        <put-attribute name="metrika" value="/WEB-INF/template/yandexMetrika.jsp"/>
+    </definition>
+
+    <definition name="baseAdmin" extends="base">
+        <put-attribute name="adminLeftBar" value="/WEB-INF/template/adminLeftBar.jsp"/>
+
+    </definition>
+
+    <definition name="baseUser" extends="base">
+        <put-attribute name="userLeftBar" value="/WEB-INF/template/userLeftBar.jsp"/>
+    </definition>
+
+
+    <definition name="main" extends="base" template="/pages/main.jsp">
+        <put-attribute name="title" value="/WEB-INF/template/title.jsp"/>
+        <put-attribute name="leftMenu" value="/WEB-INF/template/leftMenu.jsp"/>
+    </definition>
+
+
+
+
+    <definition name="admin" extends="baseAdmin" template="/pages/admin.jsp">
+    </definition>
+
+    <definition name="editor" extends="baseAdmin" template="/pages/editor.jsp">
+    </definition>
+
+    <definition name="mail" extends="baseAdmin" template="/pages/mail.jsp">
+    </definition>
+
+    <definition name="payment" extends="baseAdmin" template="/pages/payment.jsp">
+    </definition>
+
+
+
+
+    <definition name="account" extends="baseUser" template="/pages/account.jsp">
+    </definition>
+
+    <definition name="accountEdit" extends="baseUser" template="/pages/accountEdit.jsp">
+    </definition>
+
+    <definition name="dialogs" extends="baseUser" template="/pages/dialogs.jsp">
+    </definition>
+
+
+</tiles-definitions>

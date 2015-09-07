@@ -1,0 +1,229 @@
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+
+
+
+body {
+    background: #ffffff;
+}
+div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li img {
+    float: left;
+    margin: 5px;
+    border: 5px solid #fff;
+    width: 200px;
+    height: 200px;
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    -ms-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+}
+
+
+
+
+
+.example3 {
+    display:inline-block;
+    position:relative;
+
+}
+.example3 .example_text {
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    color:#fff;
+
+    padding:10px;
+    background-color:rgba(0,0,0,.3);
+
+
+}
+.example3 h6 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+.example3 span {
+    font-size:12px;
+}
+
+
+div #main{
+    display: block;
+}
+
+
+div #filter{
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    position: initial;
+    vertical-align: top;
+}
+
+div #gallery{
+    max-width: 900px;
+    display: inline-block;
+}
+
+
+#optionbox{
+    border: 1px solid #38B0E3;
+    background-color: #e0e0e0;
+    border-radius: 7px;
+    display: inline-block;
+    margin: 5px;
+    min-width: 138px;
+    padding: 5px;
+    vertical-align: top;
+}
+
+
+#row-footer{
+    background: #1b1b1b;
+    color: white;
+    border-top: 2px solid #11c2f9;
+}
+
+#menu{
+    margin-top: 20px;
+    color: #fff;
+    border-right: 1px #606060 solid;
+}
+
+#social-block{
+    margin-top: 20px;
+    color: #fff;
+    border-right: 1px #606060 solid;
+    min-height: 140px;
+}
+
+#interesting{
+    margin-top: 20px;
+    color: #fff;
+    border-right: 1px #606060 solid;
+    min-height: 140px;
+}
+
+#contact{
+    color: #fff;
+    margin-top: 20px;
+    min-height: 140px;
+}
+
+#btn-buy{
+    width: 20%;
+}
+
+.table-editor{
+    display: inline;
+}
+
+
+.editor-table{
+    display:table;
+    background:#D9EDF7;
+    border-color:#3A87AD;
+}
+.editor-row{
+    display:table-row;
+    background:#F2DEDE;
+    border-color:#B94A48;
+}
+.editor-cell{
+    display:table-cell;
+    padding-left: 5px;
+    padding-top: 5px;
+    background:#FBEED5;
+    border-color:#C09853;
+}
+
